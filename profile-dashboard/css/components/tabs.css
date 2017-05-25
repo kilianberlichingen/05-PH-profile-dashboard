@@ -1,0 +1,30 @@
+/* Your tabs CSS code here */
+.tabs{
+/*    background-color: #53443F;*/
+    padding: 20px 20px 0 20px;
+    display: flex;
+}
+
+.tab{
+    background-color: darkgrey;
+/*    border: 1px solid black;*/
+    flex: 1 1 auto;
+    /*flex-grow: 1;*/
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.tab:first-child{
+    border-top-left-radius: 10px;
+}
+.tab:last-child{
+    border-top-right-radius: 10px;
+}
+
+/*<any class="tab active">*/
+.tab.active{
+    background-color: white;
+    color: black;
+}

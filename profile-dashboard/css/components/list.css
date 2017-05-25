@@ -1,0 +1,70 @@
+/* We just give you the arrow CSS code */
+.product {
+  display: flex;
+  align-items: center;
+}
+
+.product-body {
+  flex: 1 1 auto;
+}
+
+.product-arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid transparent;
+  border-bottom: 9px solid black;
+  border-radius: 2px;
+  margin: auto;
+}
+
+.product {
+  transition: all 0.15s ease;
+}
+.product-upvote {
+  transition: all 0.15s ease;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.product-arrow {
+  transition: all 0.15s ease;
+}
+
+
+/* Background turns grey + cursor becomes Mickey Mouse's hand*/
+.product:hover {
+  background: #f7f7fa;
+  cursor: pointer;
+}
+/* Upvote gets a bit bigger */
+.product:hover .product-upvote {
+  transform: scale(1.2);
+}
+
+/* 2 - Hover effects on product-upvote */
+
+/* Text color turns blue */
+.product-upvote:hover {
+  color: #5898f1;
+  cursor: pointer;
+}
+/* Arrow triangle turns also blue */
+.product-upvote:hover .product-arrow {
+  border-bottom: 9px solid #5898f1;
+}
+
+
+.product-image {
+  height: 180px;
+  width: 250px;
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 5px;
+}
+
+.fa {
+  color: darkgrey;
+  margin-right: 40px;
+}
